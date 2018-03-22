@@ -1,0 +1,105 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+
+<Cases name="AutoTestCase">
+
+  <!--<Case name="OpenSettingAndverifySite">
+
+    <step name="CreateWebdriver" value="Edge" />
+
+    <step name="Navigate" value="https://ncuportalprv.office.com/" />
+
+    <step action="SendKeysToElement" sendValue="sdfv2parnter@msftofetesttenantpartner.onmicrosoft.com" cssPath="//input[@id='cred_userid_inputtext']"                   waitForTime="5000" isScreenShot="false"/>
+
+    <step action="SendKeysToElement" sendValue="Password!" cssPath="//input[@id='cred_password_inputtext']" waitForTime="5000" isScreenShot="true"/>
+              
+    <step action="ClickJSElement" cssPath="//button[@id='cred_sign_in_button']" waitForTime="5000" isScreenShot="true"/>
+
+    <step action="ClickElement" cssPath="//div[@id='users']" waitForTime="5000" isScreenShot="true"/>
+
+    <step action="WaitForAppear" cssPath="//button[@id='AddUser']" waitForTime="5000" isScreenShot="true"/>
+
+    <step action="ClickElement" cssPath="//button[@id='AddUser']" waitForTime="5000" isScreenShot="true"/>
+
+    <step action="ClickElement" cssPath="//div[@id='app_list_Sites']/div[1]/div[1]/div[1]/div[1]/div[2]/div[1]" waitForTime="5000" isScreenShot="true"/>
+
+  </Case>-->
+
+  <Case name="Addauserondashboard">
+
+    <step name="CreateWebdriver" value="Edge" />
+
+
+    <step name="Navigate" value="https://ncuportalprv.office.com/" />
+
+
+    <step action="ClickElement" cssPath="//table[@id='use_another_account']" waitForTime="5000" isScreenShot="true"/>
+
+
+    <step action="SendKeysToElement" sendValue="sdfv2parnter@msftofetesttenantpartner.onmicrosoft.com" cssPath="//input[@id='cred_userid_inputtext']"   waitForTime="5000" isScreenShot="false"/>
+
+
+    <step action="SendKeysToElement" sendValue="Password!" cssPath="//input[@id='cred_password_inputtext']" waitForTime="5000" isScreenShot="true"/>
+  
+  
+    <step action="ClickElement" cssPath="//button[@id='cred_sign_in_button']" waitForTime="5000" isScreenShot="true"/>
+
+
+    <step action="WaitForAppear" cssPath="//div[@id='SetupWizardBanner']" waitForTime="5000" isScreenShot="true"/>
+
+
+    <step action="ClickElement" cssPath="//a[@id='homepage']/span[1]" waitForTime="5000" isScreenShot="true"/>
+
+
+    <step action="ClickElement" cssPath="//div[@id='DashboardWidgetCommonActions']/div[2]/div[1]/a[1]" waitForTime="5000" isScreenShot="true"/>
+
+
+    <step action="WaitForAppear" cssPath="//input[@id='firstname']" waitForTime="5000" isScreenShot="true"/>
+
+  </Case>
+
+  <!--Client-->
+  <Case name="Client" flag="FULL">
+
+    <step name="OpenFile" value="c:\Windows\System32\notepad.exe" />
+
+    <step action="Click" value=";ClassName = 'Notepad';Role = 'menu bar' #2;Role = 'menu item'" />
+
+    <step action="RightClick" value="" />
+
+    <step action="DoubleClick" value="" />
+
+    <step action="Global" type="click" value="32,24"/>
+
+    <step action="Global" type="type" value="{Tab}"/>
+
+    <step action="Global" type="moveMouse" value="50,50"/>
+
+    <step action="Global" type="moveWheel" wheel="Up" value="500"/>
+
+    <step action="SendKeysToElement" sendValue="Hellow Word" waitForTime="5000" isScreenShot="false"/>
+
+  </Case>
+  <!--Android-->
+
+  <Case name="AndroidTest" flag="BVT">
+
+    <step name="AndroidConfig" version="4.4" deviceName="Android Emulator" Uri="http://127.0.0.1:4723/wd/hub" Browser=""/>
+    
+    <step action="openFile" package="com.android.calculator2" activity=".Calculator"/>
+    
+    <step action="APPClick" value="3" IsScreenShot="true"/>
+       
+  </Case>
+  <Case name="AndroidBrowser" flag="BVT">
+
+    <step name="AndroidConfig" version="4.4" deviceName="Android Emulator" Browser="Browser" Uri="http://127.0.0.1:4723/wd/hub"/>
+
+    <step action="Navigate" value="https://ncuportalprv.office.com/" />
+
+    <step action="ClickElement" cssPath="//table[@id='use_another_account']" waitForTime="5000" isScreenShot="true"/>
+
+    <step action="SendKeysToElement" sendValue="sdfv2parnter@msftofetesttenantpartner.onmicrosoft.com" cssPath="//input[@id='cred_userid_inputtext']"  isScreenShot="false"/>
+
+  </Case>
+
+</Cases>

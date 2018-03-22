@@ -1,0 +1,52 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SAPFrm", "SAPFrm\SAPFrm.csproj", "{80502AE8-476A-4246-B4F6-7172CCF042CD}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Automation_Selenium", "Automation_Selenium\Automation_Selenium.csproj", "{5CF86893-E654-4303-A8DC-D74D5DBB1172}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Execute", "Execute\Execute.csproj", "{CCB75F6A-7710-4687-99E1-B154284E64CE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Automation_Client", "Automation_Client\Automation_Client.csproj", "{456B5329-45EB-44D7-B07B-936BD8E30F9C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Automation_Android", "Automation_Android\Automation_Android.csproj", "{9DF91EFF-0E84-428A-A925-D3595CC5AD09}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SAPWeb_NEW", "SAPWeb_NEW\SAPWeb_NEW.csproj", "{D2055100-1D17-4229-AE1B-825DC2252F00}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{80502AE8-476A-4246-B4F6-7172CCF042CD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{80502AE8-476A-4246-B4F6-7172CCF042CD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{80502AE8-476A-4246-B4F6-7172CCF042CD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{80502AE8-476A-4246-B4F6-7172CCF042CD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5CF86893-E654-4303-A8DC-D74D5DBB1172}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5CF86893-E654-4303-A8DC-D74D5DBB1172}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5CF86893-E654-4303-A8DC-D74D5DBB1172}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5CF86893-E654-4303-A8DC-D74D5DBB1172}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CCB75F6A-7710-4687-99E1-B154284E64CE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CCB75F6A-7710-4687-99E1-B154284E64CE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CCB75F6A-7710-4687-99E1-B154284E64CE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CCB75F6A-7710-4687-99E1-B154284E64CE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{456B5329-45EB-44D7-B07B-936BD8E30F9C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{456B5329-45EB-44D7-B07B-936BD8E30F9C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{456B5329-45EB-44D7-B07B-936BD8E30F9C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{456B5329-45EB-44D7-B07B-936BD8E30F9C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9DF91EFF-0E84-428A-A925-D3595CC5AD09}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9DF91EFF-0E84-428A-A925-D3595CC5AD09}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9DF91EFF-0E84-428A-A925-D3595CC5AD09}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9DF91EFF-0E84-428A-A925-D3595CC5AD09}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D2055100-1D17-4229-AE1B-825DC2252F00}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D2055100-1D17-4229-AE1B-825DC2252F00}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D2055100-1D17-4229-AE1B-825DC2252F00}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D2055100-1D17-4229-AE1B-825DC2252F00}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,494 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+      <Schema Namespace="HLKJobsModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2008" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+        <EntityType Name="Job">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="Name" Type="nvarchar" MaxLength="256" Nullable="false" />
+          <Property Name="Guid" Type="uniqueidentifier" Nullable="false" />
+          <Property Name="JobExecutionTypeId" Type="int" Nullable="false" />
+          <Property Name="SetupDependencyTypeId" Type="int" Nullable="false" />
+          <Property Name="RegularDependencyTypeId" Type="int" Nullable="false" />
+          <Property Name="CleanupDependencyTypeId" Type="int" Nullable="false" />
+          <Property Name="CreatedByAlias" Type="nvarchar" MaxLength="20" Nullable="false" />
+          <Property Name="CreateTime" Type="datetime" Nullable="false" />
+          <Property Name="LastUpdatedByAlias" Type="nvarchar" MaxLength="20" Nullable="false" />
+          <Property Name="LastUpdatedTime" Type="datetime" Nullable="false" />
+          <Property Name="OwnerAlias" Type="nvarchar" MaxLength="20" Nullable="false" />
+          <Property Name="DSLinkJobId" Type="int" />
+          <Property Name="DSLinkLastUpdatedTime" Type="datetime" />
+          <Property Name="DSLinkGuid" Type="uniqueidentifier" />
+          <Property Name="Description" Type="nvarchar(max)" />
+          <Property Name="Total" Type="int" Nullable="false" />
+          <Property Name="CommonContextId" Type="int" />
+          <Property Name="FeatureId" Type="int" />
+          <Property Name="AssignedToAlias" Type="nvarchar" MaxLength="20" />
+          <Property Name="IsFreshInstall" Type="bit" />
+          <Property Name="ConfigurationOperationId" Type="int" />
+          <Property Name="ExpectedRuntime" Type="int" />
+          <Property Name="Text1" Type="nvarchar" MaxLength="255" />
+          <Property Name="Text2" Type="nvarchar" MaxLength="255" />
+          <Property Name="Text3" Type="nvarchar" MaxLength="255" />
+          <Property Name="Text4" Type="nvarchar" MaxLength="255" />
+          <Property Name="Keywords" Type="nvarchar" MaxLength="255" />
+          <Property Name="Int1" Type="int" />
+          <Property Name="Int2" Type="int" />
+          <Property Name="Url" Type="nvarchar" MaxLength="512" />
+          <Property Name="Priority" Type="int" />
+          <Property Name="ReviewedBy" Type="nvarchar" MaxLength="20" />
+          <Property Name="ReviewedDate" Type="datetime" />
+          <Property Name="CustomXml" Type="nvarchar(max)" />
+          <Property Name="DescriptionFormatId" Type="int" Nullable="false" />
+        </EntityType>
+        <EntityType Name="Resource">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="Name" Type="nvarchar" MaxLength="64" Nullable="false" />
+          <Property Name="Guid" Type="uniqueidentifier" Nullable="false" />
+          <Property Name="ResourcePoolId" Type="int" Nullable="false" />
+          <Property Name="ResourceStatusId" Type="int" Nullable="false" />
+          <Property Name="LastUpdatedByAlias" Type="nvarchar" MaxLength="20" Nullable="false" />
+          <Property Name="LastUpdatedTime" Type="datetime" Nullable="false" />
+          <Property Name="LastHBTime" Type="datetime" Nullable="false" />
+          <Property Name="LatestResourceConfigurationId" Type="int" />
+          <Property Name="PublicKey" Type="nvarchar" MaxLength="1024" />
+          <Property Name="LocationBuilding" Type="nvarchar" MaxLength="32" />
+          <Property Name="LocationRoom" Type="nvarchar" MaxLength="32" />
+          <Property Name="DateAcquired" Type="datetime" Nullable="false" />
+          <Property Name="PermanentOwnerAlias" Type="nvarchar" MaxLength="20" Nullable="false" />
+          <Property Name="CurrentOwnerAlias" Type="nvarchar" MaxLength="20" />
+          <Property Name="LastRuntime" Type="datetime" Nullable="false" />
+          <Property Name="ResourceStatusChangedByPipeline" Type="int" />
+          <Property Name="RuntimeVersion" Type="nvarchar" MaxLength="32" />
+          <Property Name="ResourceTypeId" Type="int" Nullable="false" />
+          <Property Name="ParentId" Type="int" />
+          <Property Name="RootId" Type="int" />
+          <Property Name="CustomXml" Type="nvarchar(max)" />
+          <Property Name="Crc" Type="int" />
+          <Property Name="ResourcePriority" Type="smallint" Nullable="false" />
+          <Property Name="IsTwinSchedulable" Type="int" Nullable="false" />
+          <Property Name="NeededByScheduler" Type="bit" Nullable="false" />
+          <Property Name="PushDaemonResourceId" Type="int" />
+          <Property Name="MovedToDatabaseName" Type="nvarchar" MaxLength="128" />
+          <Property Name="MovedToDataStoreName" Type="nvarchar" MaxLength="128" />
+        </EntityType>
+        <EntityType Name="Result">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="Guid" Type="uniqueidentifier" Nullable="false" />
+          <Property Name="ResultStatusId" Type="int" Nullable="false" />
+          <Property Name="JobId" Type="int" />
+          <Property Name="RunId" Type="int" />
+          <Property Name="Pass" Type="int" Nullable="false" />
+          <Property Name="Fail" Type="int" Nullable="false" />
+          <Property Name="NotApplicable" Type="int" Nullable="false" />
+          <Property Name="NotRun" Type="int" Nullable="false" />
+          <Property Name="StartTime" Type="datetime" />
+          <Property Name="EndTime" Type="datetime" />
+          <Property Name="CreatedByAlias" Type="nvarchar" MaxLength="20" Nullable="false" />
+          <Property Name="CreateTime" Type="datetime" Nullable="false" />
+          <Property Name="LastUpdatedByAlias" Type="nvarchar" MaxLength="20" Nullable="false" />
+          <Property Name="LastUpdatedTime" Type="datetime" Nullable="false" />
+          <Property Name="ResourceConfigurationId" Type="int" />
+          <Property Name="LogLocation" Type="nvarchar" MaxLength="256" />
+          <Property Name="ParentResultId" Type="int" />
+          <Property Name="ParentTaskId" Type="int" />
+          <Property Name="CurrentPipelineId" Type="int" />
+          <Property Name="CurrentPipelineStateId" Type="int" />
+          <Property Name="IsPrivateRun" Type="bit" />
+          <Property Name="ScheduleId" Type="int" />
+          <Property Name="JobContextId" Type="int" />
+          <Property Name="ScheduleContextId" Type="int" />
+          <Property Name="AssignedToAlias" Type="nvarchar" MaxLength="20" Nullable="false" />
+          <Property Name="ErrorFlags" Type="int" Nullable="false" />
+          <Property Name="Resolution" Type="nvarchar(max)" />
+          <Property Name="ResolutionTypeId" Type="int" />
+          <Property Name="SignedOffBy" Type="nvarchar" MaxLength="50" />
+          <Property Name="SignedOffDate" Type="datetime" />
+          <Property Name="ResolvedByAlias" Type="nvarchar" MaxLength="20" />
+          <Property Name="ResolvedDate" Type="datetime" />
+          <Property Name="Description" Type="nvarchar(max)" />
+          <Property Name="Conversation" Type="nvarchar(max)" />
+          <Property Name="Total" Type="int" Nullable="false" />
+          <Property Name="LogResultAttemptStartTime" Type="datetime" />
+          <Property Name="DSLinkGuid" Type="uniqueidentifier" />
+          <Property Name="CurrentPipelineSequenceNumber" Type="int" Nullable="false" />
+          <Property Name="ScheduleExpiryTime" Type="datetime" />
+          <Property Name="SchedulePriorityId" Type="int" />
+          <Property Name="ScheduleOrder" Type="int" />
+          <Property Name="InfrastructureFail" Type="int" Nullable="false" />
+          <Property Name="ScheduleContextName" Type="nvarchar" MaxLength="128" />
+          <Property Name="ContextName" Type="nvarchar" MaxLength="128" />
+          <Property Name="FullPath" Type="nvarchar" MaxLength="1152" />
+          <Property Name="ResultSummaryId" Type="int" />
+          <Property Name="ScheduledByAlias" Type="nvarchar" MaxLength="20" />
+          <Property Name="ResultStateId" Type="int" />
+          <Property Name="JobExecutionTypeId" Type="int" />
+          <Property Name="InvestigatingStartTime" Type="datetime" />
+          <Property Name="FailureTime" Type="datetime" />
+          <Property Name="IsImported" Type="bit" />
+          <Property Name="JobGuid" Type="uniqueidentifier" />
+          <Property Name="AreFiltersApplied" Type="bit" Nullable="false" />
+        </EntityType>
+        <Association Name="FK_Result_Result">
+          <End Role="Result" Type="Self.Result" Multiplicity="0..1" />
+          <End Role="Result1" Type="Self.Result" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Result">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="Result1">
+              <PropertyRef Name="ParentResultId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <EntityContainer Name="HLKJobsModelStoreContainer">
+          <EntitySet Name="Job" EntityType="Self.Job" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Resource" EntityType="Self.Resource" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Result" EntityType="Self.Result" Schema="dbo" store:Type="Tables" />
+          <AssociationSet Name="FK_Result_Result" Association="Self.FK_Result_Result">
+            <End Role="Result" EntitySet="Result" />
+            <End Role="Result1" EntitySet="Result" />
+          </AssociationSet>
+        </EntityContainer>
+      </Schema>
+    </edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="HLKJobsModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+        <EntityType Name="Job">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Name" Type="String" MaxLength="256" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="Guid" Type="Guid" Nullable="false" />
+          <Property Name="JobExecutionTypeId" Type="Int32" Nullable="false" />
+          <Property Name="SetupDependencyTypeId" Type="Int32" Nullable="false" />
+          <Property Name="RegularDependencyTypeId" Type="Int32" Nullable="false" />
+          <Property Name="CleanupDependencyTypeId" Type="Int32" Nullable="false" />
+          <Property Name="CreatedByAlias" Type="String" MaxLength="20" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="CreateTime" Type="DateTime" Nullable="false" Precision="3" />
+          <Property Name="LastUpdatedByAlias" Type="String" MaxLength="20" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="LastUpdatedTime" Type="DateTime" Nullable="false" Precision="3" />
+          <Property Name="OwnerAlias" Type="String" MaxLength="20" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="DSLinkJobId" Type="Int32" />
+          <Property Name="DSLinkLastUpdatedTime" Type="DateTime" Precision="3" />
+          <Property Name="DSLinkGuid" Type="Guid" />
+          <Property Name="Description" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="Total" Type="Int32" Nullable="false" />
+          <Property Name="CommonContextId" Type="Int32" />
+          <Property Name="FeatureId" Type="Int32" />
+          <Property Name="AssignedToAlias" Type="String" MaxLength="20" FixedLength="false" Unicode="true" />
+          <Property Name="IsFreshInstall" Type="Boolean" />
+          <Property Name="ConfigurationOperationId" Type="Int32" />
+          <Property Name="ExpectedRuntime" Type="Int32" />
+          <Property Name="Text1" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Name="Text2" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Name="Text3" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Name="Text4" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Name="Keywords" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Name="Int1" Type="Int32" />
+          <Property Name="Int2" Type="Int32" />
+          <Property Name="Url" Type="String" MaxLength="512" FixedLength="false" Unicode="true" />
+          <Property Name="Priority" Type="Int32" />
+          <Property Name="ReviewedBy" Type="String" MaxLength="20" FixedLength="false" Unicode="true" />
+          <Property Name="ReviewedDate" Type="DateTime" Precision="3" />
+          <Property Name="CustomXml" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="DescriptionFormatId" Type="Int32" Nullable="false" />
+        </EntityType>
+        <EntityType Name="Resource">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Name" Type="String" MaxLength="64" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="Guid" Type="Guid" Nullable="false" />
+          <Property Name="ResourcePoolId" Type="Int32" Nullable="false" />
+          <Property Name="ResourceStatusId" Type="Int32" Nullable="false" />
+          <Property Name="LastUpdatedByAlias" Type="String" MaxLength="20" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="LastUpdatedTime" Type="DateTime" Nullable="false" Precision="3" />
+          <Property Name="LastHBTime" Type="DateTime" Nullable="false" Precision="3" />
+          <Property Name="LatestResourceConfigurationId" Type="Int32" />
+          <Property Name="PublicKey" Type="String" MaxLength="1024" FixedLength="false" Unicode="true" />
+          <Property Name="LocationBuilding" Type="String" MaxLength="32" FixedLength="false" Unicode="true" />
+          <Property Name="LocationRoom" Type="String" MaxLength="32" FixedLength="false" Unicode="true" />
+          <Property Name="DateAcquired" Type="DateTime" Nullable="false" Precision="3" />
+          <Property Name="PermanentOwnerAlias" Type="String" MaxLength="20" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="CurrentOwnerAlias" Type="String" MaxLength="20" FixedLength="false" Unicode="true" />
+          <Property Name="LastRuntime" Type="DateTime" Nullable="false" Precision="3" />
+          <Property Name="ResourceStatusChangedByPipeline" Type="Int32" />
+          <Property Name="RuntimeVersion" Type="String" MaxLength="32" FixedLength="false" Unicode="true" />
+          <Property Name="ResourceTypeId" Type="Int32" Nullable="false" />
+          <Property Name="ParentId" Type="Int32" />
+          <Property Name="RootId" Type="Int32" />
+          <Property Name="CustomXml" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="Crc" Type="Int32" />
+          <Property Name="ResourcePriority" Type="Int16" Nullable="false" />
+          <Property Name="IsTwinSchedulable" Type="Int32" Nullable="false" />
+          <Property Name="NeededByScheduler" Type="Boolean" Nullable="false" />
+          <Property Name="PushDaemonResourceId" Type="Int32" />
+          <Property Name="MovedToDatabaseName" Type="String" MaxLength="128" FixedLength="false" Unicode="true" />
+          <Property Name="MovedToDataStoreName" Type="String" MaxLength="128" FixedLength="false" Unicode="true" />
+        </EntityType>
+        <EntityType Name="Result">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Guid" Type="Guid" Nullable="false" />
+          <Property Name="ResultStatusId" Type="Int32" Nullable="false" />
+          <Property Name="JobId" Type="Int32" />
+          <Property Name="RunId" Type="Int32" />
+          <Property Name="Pass" Type="Int32" Nullable="false" />
+          <Property Name="Fail" Type="Int32" Nullable="false" />
+          <Property Name="NotApplicable" Type="Int32" Nullable="false" />
+          <Property Name="NotRun" Type="Int32" Nullable="false" />
+          <Property Name="StartTime" Type="DateTime" Precision="3" />
+          <Property Name="EndTime" Type="DateTime" Precision="3" />
+          <Property Name="CreatedByAlias" Type="String" MaxLength="20" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="CreateTime" Type="DateTime" Nullable="false" Precision="3" />
+          <Property Name="LastUpdatedByAlias" Type="String" MaxLength="20" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="LastUpdatedTime" Type="DateTime" Nullable="false" Precision="3" />
+          <Property Name="ResourceConfigurationId" Type="Int32" />
+          <Property Name="LogLocation" Type="String" MaxLength="256" FixedLength="false" Unicode="true" />
+          <Property Name="ParentResultId" Type="Int32" />
+          <Property Name="ParentTaskId" Type="Int32" />
+          <Property Name="CurrentPipelineId" Type="Int32" />
+          <Property Name="CurrentPipelineStateId" Type="Int32" />
+          <Property Name="IsPrivateRun" Type="Boolean" />
+          <Property Name="ScheduleId" Type="Int32" />
+          <Property Name="JobContextId" Type="Int32" />
+          <Property Name="ScheduleContextId" Type="Int32" />
+          <Property Name="AssignedToAlias" Type="String" MaxLength="20" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="ErrorFlags" Type="Int32" Nullable="false" />
+          <Property Name="Resolution" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="ResolutionTypeId" Type="Int32" />
+          <Property Name="SignedOffBy" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="SignedOffDate" Type="DateTime" Precision="3" />
+          <Property Name="ResolvedByAlias" Type="String" MaxLength="20" FixedLength="false" Unicode="true" />
+          <Property Name="ResolvedDate" Type="DateTime" Precision="3" />
+          <Property Name="Description" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="Conversation" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="Total" Type="Int32" Nullable="false" />
+          <Property Name="LogResultAttemptStartTime" Type="DateTime" Precision="3" />
+          <Property Name="DSLinkGuid" Type="Guid" />
+          <Property Name="CurrentPipelineSequenceNumber" Type="Int32" Nullable="false" />
+          <Property Name="ScheduleExpiryTime" Type="DateTime" Precision="3" />
+          <Property Name="SchedulePriorityId" Type="Int32" />
+          <Property Name="ScheduleOrder" Type="Int32" />
+          <Property Name="InfrastructureFail" Type="Int32" Nullable="false" />
+          <Property Name="ScheduleContextName" Type="String" MaxLength="128" FixedLength="false" Unicode="true" />
+          <Property Name="ContextName" Type="String" MaxLength="128" FixedLength="false" Unicode="true" />
+          <Property Name="FullPath" Type="String" MaxLength="1152" FixedLength="false" Unicode="true" />
+          <Property Name="ResultSummaryId" Type="Int32" />
+          <Property Name="ScheduledByAlias" Type="String" MaxLength="20" FixedLength="false" Unicode="true" />
+          <Property Name="ResultStateId" Type="Int32" />
+          <Property Name="JobExecutionTypeId" Type="Int32" />
+          <Property Name="InvestigatingStartTime" Type="DateTime" Precision="3" />
+          <Property Name="FailureTime" Type="DateTime" Precision="3" />
+          <Property Name="IsImported" Type="Boolean" />
+          <Property Name="JobGuid" Type="Guid" />
+          <Property Name="AreFiltersApplied" Type="Boolean" Nullable="false" />
+          <NavigationProperty Name="Result1" Relationship="Self.FK_Result_Result" FromRole="Result" ToRole="Result1" />
+          <NavigationProperty Name="Result2" Relationship="Self.FK_Result_Result" FromRole="Result1" ToRole="Result" />
+        </EntityType>
+        <Association Name="FK_Result_Result">
+          <End Role="Result" Type="Self.Result" Multiplicity="0..1" />
+          <End Role="Result1" Type="Self.Result" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Result">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="Result1">
+              <PropertyRef Name="ParentResultId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <EntityContainer Name="HLKJobsEntities" annotation:LazyLoadingEnabled="true">
+          <EntitySet Name="Jobs" EntityType="Self.Job" />
+          <EntitySet Name="Resources" EntityType="Self.Resource" />
+          <EntitySet Name="Results" EntityType="Self.Result" />
+          <AssociationSet Name="FK_Result_Result" Association="Self.FK_Result_Result">
+            <End Role="Result" EntitySet="Results" />
+            <End Role="Result1" EntitySet="Results" />
+          </AssociationSet>
+        </EntityContainer>
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+        <EntityContainerMapping StorageEntityContainer="HLKJobsModelStoreContainer" CdmEntityContainer="HLKJobsEntities">
+          <EntitySetMapping Name="Jobs">
+            <EntityTypeMapping TypeName="HLKJobsModel.Job">
+              <MappingFragment StoreEntitySet="Job">
+                <ScalarProperty Name="Id" ColumnName="Id" />
+                <ScalarProperty Name="Name" ColumnName="Name" />
+                <ScalarProperty Name="Guid" ColumnName="Guid" />
+                <ScalarProperty Name="JobExecutionTypeId" ColumnName="JobExecutionTypeId" />
+                <ScalarProperty Name="SetupDependencyTypeId" ColumnName="SetupDependencyTypeId" />
+                <ScalarProperty Name="RegularDependencyTypeId" ColumnName="RegularDependencyTypeId" />
+                <ScalarProperty Name="CleanupDependencyTypeId" ColumnName="CleanupDependencyTypeId" />
+                <ScalarProperty Name="CreatedByAlias" ColumnName="CreatedByAlias" />
+                <ScalarProperty Name="CreateTime" ColumnName="CreateTime" />
+                <ScalarProperty Name="LastUpdatedByAlias" ColumnName="LastUpdatedByAlias" />
+                <ScalarProperty Name="LastUpdatedTime" ColumnName="LastUpdatedTime" />
+                <ScalarProperty Name="OwnerAlias" ColumnName="OwnerAlias" />
+                <ScalarProperty Name="DSLinkJobId" ColumnName="DSLinkJobId" />
+                <ScalarProperty Name="DSLinkLastUpdatedTime" ColumnName="DSLinkLastUpdatedTime" />
+                <ScalarProperty Name="DSLinkGuid" ColumnName="DSLinkGuid" />
+                <ScalarProperty Name="Description" ColumnName="Description" />
+                <ScalarProperty Name="Total" ColumnName="Total" />
+                <ScalarProperty Name="CommonContextId" ColumnName="CommonContextId" />
+                <ScalarProperty Name="FeatureId" ColumnName="FeatureId" />
+                <ScalarProperty Name="AssignedToAlias" ColumnName="AssignedToAlias" />
+                <ScalarProperty Name="IsFreshInstall" ColumnName="IsFreshInstall" />
+                <ScalarProperty Name="ConfigurationOperationId" ColumnName="ConfigurationOperationId" />
+                <ScalarProperty Name="ExpectedRuntime" ColumnName="ExpectedRuntime" />
+                <ScalarProperty Name="Text1" ColumnName="Text1" />
+                <ScalarProperty Name="Text2" ColumnName="Text2" />
+                <ScalarProperty Name="Text3" ColumnName="Text3" />
+                <ScalarProperty Name="Text4" ColumnName="Text4" />
+                <ScalarProperty Name="Keywords" ColumnName="Keywords" />
+                <ScalarProperty Name="Int1" ColumnName="Int1" />
+                <ScalarProperty Name="Int2" ColumnName="Int2" />
+                <ScalarProperty Name="Url" ColumnName="Url" />
+                <ScalarProperty Name="Priority" ColumnName="Priority" />
+                <ScalarProperty Name="ReviewedBy" ColumnName="ReviewedBy" />
+                <ScalarProperty Name="ReviewedDate" ColumnName="ReviewedDate" />
+                <ScalarProperty Name="CustomXml" ColumnName="CustomXml" />
+                <ScalarProperty Name="DescriptionFormatId" ColumnName="DescriptionFormatId" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Resources">
+            <EntityTypeMapping TypeName="HLKJobsModel.Resource">
+              <MappingFragment StoreEntitySet="Resource">
+                <ScalarProperty Name="Id" ColumnName="Id" />
+                <ScalarProperty Name="Name" ColumnName="Name" />
+                <ScalarProperty Name="Guid" ColumnName="Guid" />
+                <ScalarProperty Name="ResourcePoolId" ColumnName="ResourcePoolId" />
+                <ScalarProperty Name="ResourceStatusId" ColumnName="ResourceStatusId" />
+                <ScalarProperty Name="LastUpdatedByAlias" ColumnName="LastUpdatedByAlias" />
+                <ScalarProperty Name="LastUpdatedTime" ColumnName="LastUpdatedTime" />
+                <ScalarProperty Name="LastHBTime" ColumnName="LastHBTime" />
+                <ScalarProperty Name="LatestResourceConfigurationId" ColumnName="LatestResourceConfigurationId" />
+                <ScalarProperty Name="PublicKey" ColumnName="PublicKey" />
+                <ScalarProperty Name="LocationBuilding" ColumnName="LocationBuilding" />
+                <ScalarProperty Name="LocationRoom" ColumnName="LocationRoom" />
+                <ScalarProperty Name="DateAcquired" ColumnName="DateAcquired" />
+                <ScalarProperty Name="PermanentOwnerAlias" ColumnName="PermanentOwnerAlias" />
+                <ScalarProperty Name="CurrentOwnerAlias" ColumnName="CurrentOwnerAlias" />
+                <ScalarProperty Name="LastRuntime" ColumnName="LastRuntime" />
+                <ScalarProperty Name="ResourceStatusChangedByPipeline" ColumnName="ResourceStatusChangedByPipeline" />
+                <ScalarProperty Name="RuntimeVersion" ColumnName="RuntimeVersion" />
+                <ScalarProperty Name="ResourceTypeId" ColumnName="ResourceTypeId" />
+                <ScalarProperty Name="ParentId" ColumnName="ParentId" />
+                <ScalarProperty Name="RootId" ColumnName="RootId" />
+                <ScalarProperty Name="CustomXml" ColumnName="CustomXml" />
+                <ScalarProperty Name="Crc" ColumnName="Crc" />
+                <ScalarProperty Name="ResourcePriority" ColumnName="ResourcePriority" />
+                <ScalarProperty Name="IsTwinSchedulable" ColumnName="IsTwinSchedulable" />
+                <ScalarProperty Name="NeededByScheduler" ColumnName="NeededByScheduler" />
+                <ScalarProperty Name="PushDaemonResourceId" ColumnName="PushDaemonResourceId" />
+                <ScalarProperty Name="MovedToDatabaseName" ColumnName="MovedToDatabaseName" />
+                <ScalarProperty Name="MovedToDataStoreName" ColumnName="MovedToDataStoreName" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Results">
+            <EntityTypeMapping TypeName="HLKJobsModel.Result">
+              <MappingFragment StoreEntitySet="Result">
+                <ScalarProperty Name="Id" ColumnName="Id" />
+                <ScalarProperty Name="Guid" ColumnName="Guid" />
+                <ScalarProperty Name="ResultStatusId" ColumnName="ResultStatusId" />
+                <ScalarProperty Name="JobId" ColumnName="JobId" />
+                <ScalarProperty Name="RunId" ColumnName="RunId" />
+                <ScalarProperty Name="Pass" ColumnName="Pass" />
+                <ScalarProperty Name="Fail" ColumnName="Fail" />
+                <ScalarProperty Name="NotApplicable" ColumnName="NotApplicable" />
+                <ScalarProperty Name="NotRun" ColumnName="NotRun" />
+                <ScalarProperty Name="StartTime" ColumnName="StartTime" />
+                <ScalarProperty Name="EndTime" ColumnName="EndTime" />
+                <ScalarProperty Name="CreatedByAlias" ColumnName="CreatedByAlias" />
+                <ScalarProperty Name="CreateTime" ColumnName="CreateTime" />
+                <ScalarProperty Name="LastUpdatedByAlias" ColumnName="LastUpdatedByAlias" />
+                <ScalarProperty Name="LastUpdatedTime" ColumnName="LastUpdatedTime" />
+                <ScalarProperty Name="ResourceConfigurationId" ColumnName="ResourceConfigurationId" />
+                <ScalarProperty Name="LogLocation" ColumnName="LogLocation" />
+                <ScalarProperty Name="ParentResultId" ColumnName="ParentResultId" />
+                <ScalarProperty Name="ParentTaskId" ColumnName="ParentTaskId" />
+                <ScalarProperty Name="CurrentPipelineId" ColumnName="CurrentPipelineId" />
+                <ScalarProperty Name="CurrentPipelineStateId" ColumnName="CurrentPipelineStateId" />
+                <ScalarProperty Name="IsPrivateRun" ColumnName="IsPrivateRun" />
+                <ScalarProperty Name="ScheduleId" ColumnName="ScheduleId" />
+                <ScalarProperty Name="JobContextId" ColumnName="JobContextId" />
+                <ScalarProperty Name="ScheduleContextId" ColumnName="ScheduleContextId" />
+                <ScalarProperty Name="AssignedToAlias" ColumnName="AssignedToAlias" />
+                <ScalarProperty Name="ErrorFlags" ColumnName="ErrorFlags" />
+                <ScalarProperty Name="Resolution" ColumnName="Resolution" />
+                <ScalarProperty Name="ResolutionTypeId" ColumnName="ResolutionTypeId" />
+                <ScalarProperty Name="SignedOffBy" ColumnName="SignedOffBy" />
+                <ScalarProperty Name="SignedOffDate" ColumnName="SignedOffDate" />
+                <ScalarProperty Name="ResolvedByAlias" ColumnName="ResolvedByAlias" />
+                <ScalarProperty Name="ResolvedDate" ColumnName="ResolvedDate" />
+                <ScalarProperty Name="Description" ColumnName="Description" />
+                <ScalarProperty Name="Conversation" ColumnName="Conversation" />
+                <ScalarProperty Name="Total" ColumnName="Total" />
+                <ScalarProperty Name="LogResultAttemptStartTime" ColumnName="LogResultAttemptStartTime" />
+                <ScalarProperty Name="DSLinkGuid" ColumnName="DSLinkGuid" />
+                <ScalarProperty Name="CurrentPipelineSequenceNumber" ColumnName="CurrentPipelineSequenceNumber" />
+                <ScalarProperty Name="ScheduleExpiryTime" ColumnName="ScheduleExpiryTime" />
+                <ScalarProperty Name="SchedulePriorityId" ColumnName="SchedulePriorityId" />
+                <ScalarProperty Name="ScheduleOrder" ColumnName="ScheduleOrder" />
+                <ScalarProperty Name="InfrastructureFail" ColumnName="InfrastructureFail" />
+                <ScalarProperty Name="ScheduleContextName" ColumnName="ScheduleContextName" />
+                <ScalarProperty Name="ContextName" ColumnName="ContextName" />
+                <ScalarProperty Name="FullPath" ColumnName="FullPath" />
+                <ScalarProperty Name="ResultSummaryId" ColumnName="ResultSummaryId" />
+                <ScalarProperty Name="ScheduledByAlias" ColumnName="ScheduledByAlias" />
+                <ScalarProperty Name="ResultStateId" ColumnName="ResultStateId" />
+                <ScalarProperty Name="JobExecutionTypeId" ColumnName="JobExecutionTypeId" />
+                <ScalarProperty Name="InvestigatingStartTime" ColumnName="InvestigatingStartTime" />
+                <ScalarProperty Name="FailureTime" ColumnName="FailureTime" />
+                <ScalarProperty Name="IsImported" ColumnName="IsImported" />
+                <ScalarProperty Name="JobGuid" ColumnName="JobGuid" />
+                <ScalarProperty Name="AreFiltersApplied" ColumnName="AreFiltersApplied" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+        </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="true" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="true" />
+        <DesignerProperty Name="UseLegacyProvider" Value="true" />
+        <DesignerProperty Name="CodeGenerationStrategy" Value="None" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams></Diagrams>
+  </Designer>
+</edmx:Edmx>

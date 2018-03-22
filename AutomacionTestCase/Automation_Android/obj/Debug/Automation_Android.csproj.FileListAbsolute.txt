@@ -1,0 +1,15 @@
+C:\Users\v-shgao\Source\Repos\SAP2\AutomacionTestCase\Automation_Android\bin\Debug\Automation_Android.exe.config
+C:\Users\v-shgao\Source\Repos\SAP2\AutomacionTestCase\Automation_Android\bin\Debug\Automation_Android.exe
+C:\Users\v-shgao\Source\Repos\SAP2\AutomacionTestCase\Automation_Android\bin\Debug\Automation_Android.pdb
+C:\Users\v-shgao\Source\Repos\SAP2\AutomacionTestCase\Automation_Android\bin\Debug\Automation_Selenium.exe
+C:\Users\v-shgao\Source\Repos\SAP2\AutomacionTestCase\Automation_Android\bin\Debug\UIAF.dll
+C:\Users\v-shgao\Source\Repos\SAP2\AutomacionTestCase\Automation_Android\bin\Debug\WebDriver.dll
+C:\Users\v-shgao\Source\Repos\SAP2\AutomacionTestCase\Automation_Android\bin\Debug\WebDriver.Support.dll
+C:\Users\v-shgao\Source\Repos\SAP2\AutomacionTestCase\Automation_Android\bin\Debug\Automation_Selenium.pdb
+C:\Users\v-shgao\Source\Repos\SAP2\AutomacionTestCase\Automation_Android\bin\Debug\WebDriver.pdb
+C:\Users\v-shgao\Source\Repos\SAP2\AutomacionTestCase\Automation_Android\bin\Debug\WebDriver.xml
+C:\Users\v-shgao\Source\Repos\SAP2\AutomacionTestCase\Automation_Android\bin\Debug\WebDriver.Support.pdb
+C:\Users\v-shgao\Source\Repos\SAP2\AutomacionTestCase\Automation_Android\bin\Debug\WebDriver.Support.xml
+C:\Users\v-shgao\Source\Repos\SAP2\AutomacionTestCase\Automation_Android\obj\Debug\Automation_Android.csprojResolveAssemblyReference.cache
+C:\Users\v-shgao\Source\Repos\SAP2\AutomacionTestCase\Automation_Android\obj\Debug\Automation_Android.exe
+C:\Users\v-shgao\Source\Repos\SAP2\AutomacionTestCase\Automation_Android\obj\Debug\Automation_Android.pdb

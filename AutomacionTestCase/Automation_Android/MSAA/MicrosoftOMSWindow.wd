@@ -1,0 +1,1 @@
+﻿MicrosoftOMSWindow    ";Name => '{0}';Name => '{0}' && Role = 'window' && ClassName = 'TabWindowClass';Name => '{1}' && Role = 'pane'"    "Internet Explorer", "Microsoft Operations Management Suite"

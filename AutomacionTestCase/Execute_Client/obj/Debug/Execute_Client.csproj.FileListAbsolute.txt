@@ -1,0 +1,6 @@
+C:\Users\v-yusun\Source\Repos\SAP\AutomacionTestCase\Execute_Client\bin\Debug\Execute_Client.exe.config
+C:\Users\v-yusun\Source\Repos\SAP\AutomacionTestCase\Execute_Client\bin\Debug\Execute_Client.exe
+C:\Users\v-yusun\Source\Repos\SAP\AutomacionTestCase\Execute_Client\bin\Debug\Execute_Client.pdb
+C:\Users\v-yusun\Source\Repos\SAP\AutomacionTestCase\Execute_Client\obj\Debug\Execute_Client.exe
+C:\Users\v-yusun\Source\Repos\SAP\AutomacionTestCase\Execute_Client\obj\Debug\Execute_Client.pdb
+C:\Users\v-yusun\Source\Repos\SAP\AutomacionTestCase\Execute_Client\obj\Debug\Execute_Client.csprojResolveAssemblyReference.cache

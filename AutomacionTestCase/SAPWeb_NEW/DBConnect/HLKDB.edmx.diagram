@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="503093ae187240e8abb2b8a73a280706" Name="Diagram1">
+        <EntityTypeShape EntityType="HLKJobsModel.Feature" Width="1.5" PointX="5.75" PointY="3.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="HLKJobsModel.Job" Width="1.5" PointX="8" PointY="1.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="HLKJobsModel.JobExecutionType" Width="1.5" PointX="5.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="HLKJobsModel.Resource" Width="1.5" PointX="3" PointY="4.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="HLKJobsModel.ResourceConfiguration" Width="1.5" PointX="0.75" PointY="2.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="HLKJobsModel.ResourcePool" Width="1.5" PointX="0.75" PointY="6.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="HLKJobsModel.Result" Width="1.5" PointX="3" PointY="20" IsExpanded="true" />
+        <EntityTypeShape EntityType="HLKJobsModel.Run" Width="1.5" PointX="5.25" PointY="13.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="HLKJobsModel.Schedule" Width="1.5" PointX="3" PointY="13.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="HLKJobsModel.TaskResult" Width="1.5" PointX="10.75" PointY="1" IsExpanded="true" />
+        <EntityTypeShape EntityType="HLKJobsModel.JobAncestry" Width="1.5" PointX="2.75" PointY="1" IsExpanded="true" />
+        <AssociationConnector Association="HLKJobsModel.FK_Feature_Feature" ManuallyRouted="false" />
+        <AssociationConnector Association="HLKJobsModel.FK_Job_Feature" ManuallyRouted="false" />
+        <AssociationConnector Association="HLKJobsModel.FK_Job_JobExecutionType" ManuallyRouted="false" />
+        <AssociationConnector Association="HLKJobsModel.FK_Resource_ResourceConfiguration" ManuallyRouted="false" />
+        <AssociationConnector Association="HLKJobsModel.FK_Resource_ResourcePool" ManuallyRouted="false" />
+        <AssociationConnector Association="HLKJobsModel.FK_Result_ResourceConfiguration" ManuallyRouted="false" />
+        <AssociationConnector Association="HLKJobsModel.FK_ResourcePool_ResourcePool" ManuallyRouted="false" />
+        <AssociationConnector Association="HLKJobsModel.FK_Schedule_ResourcePool" ManuallyRouted="false" />
+        <AssociationConnector Association="HLKJobsModel.FK_Result_Result" ManuallyRouted="false" />
+        <AssociationConnector Association="HLKJobsModel.FK_Run_Schedule" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

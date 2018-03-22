@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<!--<MachineConfig>
+  <Pool>$\Automation_VM</Pool>
+  <IdentityServer>HCKSERVER.fareast.corp.microsoft.com</IdentityServer>
+  <IdentityDatabase>WTTIdentity</IdentityDatabase>
+  <DataStore>HCKSERVER</DataStore>
+  <JobId>4049</JobId>
+</MachineConfig>-->
+
+<MachineConfig>
+  <Pool>$\Automation_Testcase</Pool>
+  <IdentityServer>hlkserver.fareast.corp.microsoft.com</IdentityServer>
+  <IdentityDatabase>wttidentity</IdentityDatabase>
+  <DataStore>hlkserver</DataStore>
+  <JobId>4049</JobId>
+</MachineConfig>

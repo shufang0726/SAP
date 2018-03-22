@@ -1,0 +1,252 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{80502AE8-476A-4246-B4F6-7172CCF042CD}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>SAPFrm</RootNamespace>
+    <AssemblyName>SAPFrm</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="ComboBoxCustomer, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\Documents\My Received Files\ComboBoxCustomer\ComboBoxCustomer\bin\Debug\ComboBoxCustomer.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.1.3\lib\net45\EntityFramework.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.1.3\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.Office.Interop.Excel, Version=15.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+      <HintPath>..\packages\Microsoft.Office.Interop.Excel.15.0.4795.1000\lib\net20\Microsoft.Office.Interop.Excel.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.WTT.Diagnostics">
+      <HintPath>..\..\..\..\..\Desktop\WX_HLK\wx-dll\Microsoft.WTT.Diagnostics.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Security" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="WTTOMAsset">
+      <HintPath>..\..\..\..\..\Desktop\WX_HLK\wx-dll\WTTOMAsset.dll</HintPath>
+    </Reference>
+    <Reference Include="WTTOMBase">
+      <HintPath>..\..\..\..\..\Desktop\WX_HLK\wx-dll\WTTOMBase.dll</HintPath>
+    </Reference>
+    <Reference Include="WTTOMDeployment">
+      <HintPath>..\..\..\..\..\Desktop\WX_HLK\wx-dll\WTTOMDeployment.dll</HintPath>
+    </Reference>
+    <Reference Include="WTTOMDimension">
+      <HintPath>..\..\..\..\..\Desktop\WX_HLK\wx-dll\WTTOMDimension.dll</HintPath>
+    </Reference>
+    <Reference Include="WTTOMFailure">
+      <HintPath>..\..\..\..\..\Desktop\WX_HLK\wx-dll\WTTOMFailure.dll</HintPath>
+    </Reference>
+    <Reference Include="WTTOMFeature">
+      <HintPath>..\..\..\..\..\Desktop\WX_HLK\wx-dll\WTTOMFeature.dll</HintPath>
+    </Reference>
+    <Reference Include="WTTOMIdentity, Version=2.2.2098.0, Culture=neutral, PublicKeyToken=399d95e6b32b7391, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\Desktop\dll\WTTOMIdentity.dll</HintPath>
+    </Reference>
+    <Reference Include="WTTOMJobs">
+      <HintPath>..\..\..\..\..\Desktop\WX_HLK\wx-dll\WTTOMJobs.dll</HintPath>
+    </Reference>
+    <Reference Include="WTTOMNotification">
+      <HintPath>..\..\..\..\..\Desktop\WX_HLK\wx-dll\WTTOMNotification.dll</HintPath>
+    </Reference>
+    <Reference Include="WTTOMParameter">
+      <HintPath>..\..\..\..\..\Desktop\WX_HLK\wx-dll\WTTOMParameter.dll</HintPath>
+    </Reference>
+    <Reference Include="WTTOMResource">
+      <HintPath>..\..\..\..\..\Desktop\WX_HLK\wx-dll\WTTOMResource.dll</HintPath>
+    </Reference>
+    <Reference Include="WTTOMSchedule">
+      <HintPath>..\..\..\..\..\Desktop\WX_HLK\wx-dll\WTTOMSchedule.dll</HintPath>
+    </Reference>
+    <Reference Include="WTTOMSQLProvider">
+      <HintPath>..\..\..\..\..\Desktop\WX_HLK\wx-dll\WTTOMSQLProvider.dll</HintPath>
+    </Reference>
+    <Reference Include="WTTOMStage">
+      <HintPath>..\..\..\..\..\Desktop\WX_HLK\wx-dll\WTTOMStage.dll</HintPath>
+    </Reference>
+    <Reference Include="WTTSchemaGenerator">
+      <HintPath>..\..\..\..\..\Desktop\WX_HLK\wx-dll\WTTSchemaGenerator.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="CreateTestCases\GenerateAndroidTestCases.cs" />
+    <Compile Include="CreateTestCases\GenerateClientTestCases.cs.cs" />
+    <Compile Include="CreateTestCases\GenerateWebTestCases.cs" />
+    <Compile Include="DAL\DBHelperJob.cs" />
+    <Compile Include="DBConnect\Feature.cs">
+      <DependentUpon>JobEntity.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DBConnect\Job.cs">
+      <DependentUpon>JobEntity.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DBConnect\JobAncestry.cs">
+      <DependentUpon>JobEntity.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DBConnect\JobEntity.Context.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>JobEntity.Context.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DBConnect\JobEntity.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>JobEntity.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DBConnect\JobEntity.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>JobEntity.edmx</DependentUpon>
+    </Compile>
+    <Compile Include="DBConnect\JobExecutionType.cs">
+      <DependentUpon>JobEntity.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DBConnect\Resource.cs">
+      <DependentUpon>JobEntity.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DBConnect\ResourceConfiguration.cs">
+      <DependentUpon>JobEntity.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DBConnect\ResourcePool.cs">
+      <DependentUpon>JobEntity.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DBConnect\Result.cs">
+      <DependentUpon>JobEntity.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DBConnect\Run.cs">
+      <DependentUpon>JobEntity.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DBConnect\Schedule.cs">
+      <DependentUpon>JobEntity.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Models\HLKController.cs" />
+    <Compile Include="Models\HLKModel.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EntityDeploy Include="DBConnect\JobEntity.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>JobEntity.Designer.cs</LastGenOutput>
+    </EntityDeploy>
+    <None Include="DBConnect\JobEntity.edmx.diagram">
+      <DependentUpon>JobEntity.edmx</DependentUpon>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config">
+      <SubType>Designer</SubType>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="CreateTestCases\Template.xml" />
+    <Content Include="DBConnect\JobEntity.Context.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>JobEntity.edmx</DependentUpon>
+      <LastGenOutput>JobEntity.Context.cs</LastGenOutput>
+    </Content>
+    <Content Include="DBConnect\JobEntity.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>JobEntity.edmx</DependentUpon>
+      <LastGenOutput>JobEntity.cs</LastGenOutput>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Execute\Execute.csproj">
+      <Project>{ccb75f6a-7710-4687-99e1-b154284e64ce}</Project>
+      <Name>Execute</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\SAPWeb_NEW\SAPWeb_NEW.csproj">
+      <Project>{D2055100-1D17-4229-AE1B-825DC2252F00}</Project>
+      <Name>SAPWeb_NEW</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

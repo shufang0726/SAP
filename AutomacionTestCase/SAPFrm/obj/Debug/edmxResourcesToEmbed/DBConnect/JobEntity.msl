@@ -1,0 +1,259 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="HLKJobsModelStoreContainer" CdmEntityContainer="HLKJobsEntities">
+    <EntitySetMapping Name="Features">
+      <EntityTypeMapping TypeName="HLKJobsModel.Feature">
+        <MappingFragment StoreEntitySet="Feature">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Path" ColumnName="Path" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="ParentId" ColumnName="ParentId" />
+          <ScalarProperty Name="ChildCount" ColumnName="ChildCount" />
+          <ScalarProperty Name="Url" ColumnName="Url" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+          <ScalarProperty Name="SourceId" ColumnName="SourceId" />
+          <ScalarProperty Name="SourceParentId" ColumnName="SourceParentId" />
+          <ScalarProperty Name="LastUpdatedTime" ColumnName="LastUpdatedTime" />
+          <ScalarProperty Name="SourceDB" ColumnName="SourceDB" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Jobs">
+      <EntityTypeMapping TypeName="HLKJobsModel.Job">
+        <MappingFragment StoreEntitySet="Job">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Guid" ColumnName="Guid" />
+          <ScalarProperty Name="JobExecutionTypeId" ColumnName="JobExecutionTypeId" />
+          <ScalarProperty Name="SetupDependencyTypeId" ColumnName="SetupDependencyTypeId" />
+          <ScalarProperty Name="RegularDependencyTypeId" ColumnName="RegularDependencyTypeId" />
+          <ScalarProperty Name="CleanupDependencyTypeId" ColumnName="CleanupDependencyTypeId" />
+          <ScalarProperty Name="CreatedByAlias" ColumnName="CreatedByAlias" />
+          <ScalarProperty Name="CreateTime" ColumnName="CreateTime" />
+          <ScalarProperty Name="LastUpdatedByAlias" ColumnName="LastUpdatedByAlias" />
+          <ScalarProperty Name="LastUpdatedTime" ColumnName="LastUpdatedTime" />
+          <ScalarProperty Name="OwnerAlias" ColumnName="OwnerAlias" />
+          <ScalarProperty Name="DSLinkJobId" ColumnName="DSLinkJobId" />
+          <ScalarProperty Name="DSLinkLastUpdatedTime" ColumnName="DSLinkLastUpdatedTime" />
+          <ScalarProperty Name="DSLinkGuid" ColumnName="DSLinkGuid" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+          <ScalarProperty Name="Total" ColumnName="Total" />
+          <ScalarProperty Name="CommonContextId" ColumnName="CommonContextId" />
+          <ScalarProperty Name="FeatureId" ColumnName="FeatureId" />
+          <ScalarProperty Name="AssignedToAlias" ColumnName="AssignedToAlias" />
+          <ScalarProperty Name="IsFreshInstall" ColumnName="IsFreshInstall" />
+          <ScalarProperty Name="ConfigurationOperationId" ColumnName="ConfigurationOperationId" />
+          <ScalarProperty Name="ExpectedRuntime" ColumnName="ExpectedRuntime" />
+          <ScalarProperty Name="Text1" ColumnName="Text1" />
+          <ScalarProperty Name="Text2" ColumnName="Text2" />
+          <ScalarProperty Name="Text3" ColumnName="Text3" />
+          <ScalarProperty Name="Text4" ColumnName="Text4" />
+          <ScalarProperty Name="Keywords" ColumnName="Keywords" />
+          <ScalarProperty Name="Int1" ColumnName="Int1" />
+          <ScalarProperty Name="Int2" ColumnName="Int2" />
+          <ScalarProperty Name="Url" ColumnName="Url" />
+          <ScalarProperty Name="Priority" ColumnName="Priority" />
+          <ScalarProperty Name="ReviewedBy" ColumnName="ReviewedBy" />
+          <ScalarProperty Name="ReviewedDate" ColumnName="ReviewedDate" />
+          <ScalarProperty Name="CustomXml" ColumnName="CustomXml" />
+          <ScalarProperty Name="DescriptionFormatId" ColumnName="DescriptionFormatId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="JobExecutionTypes">
+      <EntityTypeMapping TypeName="HLKJobsModel.JobExecutionType">
+        <MappingFragment StoreEntitySet="JobExecutionType">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="EnumConstant" ColumnName="EnumConstant" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Resources">
+      <EntityTypeMapping TypeName="HLKJobsModel.Resource">
+        <MappingFragment StoreEntitySet="Resource">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Guid" ColumnName="Guid" />
+          <ScalarProperty Name="ResourcePoolId" ColumnName="ResourcePoolId" />
+          <ScalarProperty Name="ResourceStatusId" ColumnName="ResourceStatusId" />
+          <ScalarProperty Name="LastUpdatedByAlias" ColumnName="LastUpdatedByAlias" />
+          <ScalarProperty Name="LastUpdatedTime" ColumnName="LastUpdatedTime" />
+          <ScalarProperty Name="LastHBTime" ColumnName="LastHBTime" />
+          <ScalarProperty Name="LatestResourceConfigurationId" ColumnName="LatestResourceConfigurationId" />
+          <ScalarProperty Name="PublicKey" ColumnName="PublicKey" />
+          <ScalarProperty Name="LocationBuilding" ColumnName="LocationBuilding" />
+          <ScalarProperty Name="LocationRoom" ColumnName="LocationRoom" />
+          <ScalarProperty Name="DateAcquired" ColumnName="DateAcquired" />
+          <ScalarProperty Name="PermanentOwnerAlias" ColumnName="PermanentOwnerAlias" />
+          <ScalarProperty Name="CurrentOwnerAlias" ColumnName="CurrentOwnerAlias" />
+          <ScalarProperty Name="LastRuntime" ColumnName="LastRuntime" />
+          <ScalarProperty Name="ResourceStatusChangedByPipeline" ColumnName="ResourceStatusChangedByPipeline" />
+          <ScalarProperty Name="RuntimeVersion" ColumnName="RuntimeVersion" />
+          <ScalarProperty Name="ResourceTypeId" ColumnName="ResourceTypeId" />
+          <ScalarProperty Name="ParentId" ColumnName="ParentId" />
+          <ScalarProperty Name="RootId" ColumnName="RootId" />
+          <ScalarProperty Name="CustomXml" ColumnName="CustomXml" />
+          <ScalarProperty Name="Crc" ColumnName="Crc" />
+          <ScalarProperty Name="ResourcePriority" ColumnName="ResourcePriority" />
+          <ScalarProperty Name="IsTwinSchedulable" ColumnName="IsTwinSchedulable" />
+          <ScalarProperty Name="NeededByScheduler" ColumnName="NeededByScheduler" />
+          <ScalarProperty Name="PushDaemonResourceId" ColumnName="PushDaemonResourceId" />
+          <ScalarProperty Name="MovedToDatabaseName" ColumnName="MovedToDatabaseName" />
+          <ScalarProperty Name="MovedToDataStoreName" ColumnName="MovedToDataStoreName" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ResourcePools">
+      <EntityTypeMapping TypeName="HLKJobsModel.ResourcePool">
+        <MappingFragment StoreEntitySet="ResourcePool">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Path" ColumnName="Path" />
+          <ScalarProperty Name="PushDaemonResourceId" ColumnName="PushDaemonResourceId" />
+          <ScalarProperty Name="DSUserAlias" ColumnName="DSUserAlias" />
+          <ScalarProperty Name="ScheduleAsUnit" ColumnName="ScheduleAsUnit" />
+          <ScalarProperty Name="ParentId" ColumnName="ParentId" />
+          <ScalarProperty Name="RunId" ColumnName="RunId" />
+          <ScalarProperty Name="IsSmartSchedulerEnabled" ColumnName="IsSmartSchedulerEnabled" />
+          <ScalarProperty Name="ChildCount" ColumnName="ChildCount" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Results">
+      <EntityTypeMapping TypeName="HLKJobsModel.Result">
+        <MappingFragment StoreEntitySet="Result">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Guid" ColumnName="Guid" />
+          <ScalarProperty Name="ResultStatusId" ColumnName="ResultStatusId" />
+          <ScalarProperty Name="JobId" ColumnName="JobId" />
+          <ScalarProperty Name="RunId" ColumnName="RunId" />
+          <ScalarProperty Name="Pass" ColumnName="Pass" />
+          <ScalarProperty Name="Fail" ColumnName="Fail" />
+          <ScalarProperty Name="NotApplicable" ColumnName="NotApplicable" />
+          <ScalarProperty Name="NotRun" ColumnName="NotRun" />
+          <ScalarProperty Name="StartTime" ColumnName="StartTime" />
+          <ScalarProperty Name="EndTime" ColumnName="EndTime" />
+          <ScalarProperty Name="CreatedByAlias" ColumnName="CreatedByAlias" />
+          <ScalarProperty Name="CreateTime" ColumnName="CreateTime" />
+          <ScalarProperty Name="LastUpdatedByAlias" ColumnName="LastUpdatedByAlias" />
+          <ScalarProperty Name="LastUpdatedTime" ColumnName="LastUpdatedTime" />
+          <ScalarProperty Name="ResourceConfigurationId" ColumnName="ResourceConfigurationId" />
+          <ScalarProperty Name="LogLocation" ColumnName="LogLocation" />
+          <ScalarProperty Name="ParentResultId" ColumnName="ParentResultId" />
+          <ScalarProperty Name="ParentTaskId" ColumnName="ParentTaskId" />
+          <ScalarProperty Name="CurrentPipelineId" ColumnName="CurrentPipelineId" />
+          <ScalarProperty Name="CurrentPipelineStateId" ColumnName="CurrentPipelineStateId" />
+          <ScalarProperty Name="IsPrivateRun" ColumnName="IsPrivateRun" />
+          <ScalarProperty Name="ScheduleId" ColumnName="ScheduleId" />
+          <ScalarProperty Name="JobContextId" ColumnName="JobContextId" />
+          <ScalarProperty Name="ScheduleContextId" ColumnName="ScheduleContextId" />
+          <ScalarProperty Name="AssignedToAlias" ColumnName="AssignedToAlias" />
+          <ScalarProperty Name="ErrorFlags" ColumnName="ErrorFlags" />
+          <ScalarProperty Name="Resolution" ColumnName="Resolution" />
+          <ScalarProperty Name="ResolutionTypeId" ColumnName="ResolutionTypeId" />
+          <ScalarProperty Name="SignedOffBy" ColumnName="SignedOffBy" />
+          <ScalarProperty Name="SignedOffDate" ColumnName="SignedOffDate" />
+          <ScalarProperty Name="ResolvedByAlias" ColumnName="ResolvedByAlias" />
+          <ScalarProperty Name="ResolvedDate" ColumnName="ResolvedDate" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+          <ScalarProperty Name="Conversation" ColumnName="Conversation" />
+          <ScalarProperty Name="Total" ColumnName="Total" />
+          <ScalarProperty Name="LogResultAttemptStartTime" ColumnName="LogResultAttemptStartTime" />
+          <ScalarProperty Name="DSLinkGuid" ColumnName="DSLinkGuid" />
+          <ScalarProperty Name="CurrentPipelineSequenceNumber" ColumnName="CurrentPipelineSequenceNumber" />
+          <ScalarProperty Name="ScheduleExpiryTime" ColumnName="ScheduleExpiryTime" />
+          <ScalarProperty Name="SchedulePriorityId" ColumnName="SchedulePriorityId" />
+          <ScalarProperty Name="ScheduleOrder" ColumnName="ScheduleOrder" />
+          <ScalarProperty Name="InfrastructureFail" ColumnName="InfrastructureFail" />
+          <ScalarProperty Name="ScheduleContextName" ColumnName="ScheduleContextName" />
+          <ScalarProperty Name="ContextName" ColumnName="ContextName" />
+          <ScalarProperty Name="FullPath" ColumnName="FullPath" />
+          <ScalarProperty Name="ResultSummaryId" ColumnName="ResultSummaryId" />
+          <ScalarProperty Name="ScheduledByAlias" ColumnName="ScheduledByAlias" />
+          <ScalarProperty Name="ResultStateId" ColumnName="ResultStateId" />
+          <ScalarProperty Name="JobExecutionTypeId" ColumnName="JobExecutionTypeId" />
+          <ScalarProperty Name="InvestigatingStartTime" ColumnName="InvestigatingStartTime" />
+          <ScalarProperty Name="FailureTime" ColumnName="FailureTime" />
+          <ScalarProperty Name="IsImported" ColumnName="IsImported" />
+          <ScalarProperty Name="JobGuid" ColumnName="JobGuid" />
+          <ScalarProperty Name="AreFiltersApplied" ColumnName="AreFiltersApplied" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="JobAncestries">
+      <EntityTypeMapping TypeName="HLKJobsModel.JobAncestry">
+        <MappingFragment StoreEntitySet="JobAncestry">
+          <ScalarProperty Name="ChildJobId" ColumnName="ChildJobId" />
+          <ScalarProperty Name="AncestorJobId" ColumnName="AncestorJobId" />
+          <ScalarProperty Name="ParentTaskId" ColumnName="ParentTaskId" />
+          <ScalarProperty Name="Depth" ColumnName="Depth" />
+          <ScalarProperty Name="Path" ColumnName="Path" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ResourceConfigurations">
+      <EntityTypeMapping TypeName="HLKJobsModel.ResourceConfiguration">
+        <MappingFragment StoreEntitySet="ResourceConfiguration">
+          <ScalarProperty Name="SysParseXmlPath" ColumnName="SysParseXmlPath" />
+          <ScalarProperty Name="ResourceId" ColumnName="ResourceId" />
+          <ScalarProperty Name="CreateTime" ColumnName="CreateTime" />
+          <ScalarProperty Name="LastUpdatedTime" ColumnName="LastUpdatedTime" />
+          <ScalarProperty Name="IsShared" ColumnName="IsShared" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Runs">
+      <EntityTypeMapping TypeName="HLKJobsModel.Run">
+        <MappingFragment StoreEntitySet="Run">
+          <ScalarProperty Name="SourceDsLinkGuid" ColumnName="SourceDsLinkGuid" />
+          <ScalarProperty Name="RunXml" ColumnName="RunXml" />
+          <ScalarProperty Name="IsRunMovedFromPD" ColumnName="IsRunMovedFromPD" />
+          <ScalarProperty Name="CurrentPipelineSequenceNumber" ColumnName="CurrentPipelineSequenceNumber" />
+          <ScalarProperty Name="SkipSmartScheduler" ColumnName="SkipSmartScheduler" />
+          <ScalarProperty Name="LinkRunId" ColumnName="LinkRunId" />
+          <ScalarProperty Name="RunResourceId" ColumnName="RunResourceId" />
+          <ScalarProperty Name="ConstraintQueryId" ColumnName="ConstraintQueryId" />
+          <ScalarProperty Name="ParentTaskResultId" ColumnName="ParentTaskResultId" />
+          <ScalarProperty Name="LogLocation" ColumnName="LogLocation" />
+          <ScalarProperty Name="CurrentPipelineId" ColumnName="CurrentPipelineId" />
+          <ScalarProperty Name="CurrentPipelineStateId" ColumnName="CurrentPipelineStateId" />
+          <ScalarProperty Name="ScheduleId" ColumnName="ScheduleId" />
+          <ScalarProperty Name="EndTime" ColumnName="EndTime" />
+          <ScalarProperty Name="LastUpdatedTime" ColumnName="LastUpdatedTime" />
+          <ScalarProperty Name="StartTime" ColumnName="StartTime" />
+          <ScalarProperty Name="RunStatusId" ColumnName="RunStatusId" />
+          <ScalarProperty Name="Guid" ColumnName="Guid" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Schedules">
+      <EntityTypeMapping TypeName="HLKJobsModel.Schedule">
+        <MappingFragment StoreEntitySet="Schedule">
+          <ScalarProperty Name="FailureActionId" ColumnName="FailureActionId" />
+          <ScalarProperty Name="RunTimeout" ColumnName="RunTimeout" />
+          <ScalarProperty Name="IsSmartSchedulerEnabled" ColumnName="IsSmartSchedulerEnabled" />
+          <ScalarProperty Name="IsResourceSelected" ColumnName="IsResourceSelected" />
+          <ScalarProperty Name="CommonContextId" ColumnName="CommonContextId" />
+          <ScalarProperty Name="IsIdleRun" ColumnName="IsIdleRun" />
+          <ScalarProperty Name="MaxJobsPerRun" ColumnName="MaxJobsPerRun" />
+          <ScalarProperty Name="ScheduleRuntimeMinutes" ColumnName="ScheduleRuntimeMinutes" />
+          <ScalarProperty Name="ScheduleEndTime" ColumnName="ScheduleEndTime" />
+          <ScalarProperty Name="ScheduleStartTime" ColumnName="ScheduleStartTime" />
+          <ScalarProperty Name="SendMailFor" ColumnName="SendMailFor" />
+          <ScalarProperty Name="MailCC" ColumnName="MailCC" />
+          <ScalarProperty Name="Mailto" ColumnName="Mailto" />
+          <ScalarProperty Name="ResourcePoolId" ColumnName="ResourcePoolId" />
+          <ScalarProperty Name="ScheduleTimeout" ColumnName="ScheduleTimeout" />
+          <ScalarProperty Name="ScheduledByAlias" ColumnName="ScheduledByAlias" />
+          <ScalarProperty Name="LastScheduleTime" ColumnName="LastScheduleTime" />
+          <ScalarProperty Name="FirstScheduleTime" ColumnName="FirstScheduleTime" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

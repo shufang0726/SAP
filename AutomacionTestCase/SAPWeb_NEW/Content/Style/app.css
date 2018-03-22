@@ -1,0 +1,419 @@
+﻿.navbar {
+    background-color:#1a86c0;
+    border:none;
+    border-radius:0px;
+    color:#fff;
+    margin-bottom:20px;
+}
+.block {
+background-color:white;
+padding:15px;
+}
+/*media all*/
+.block {
+    background-color:white; 
+        padding:15px;
+        }
+body {
+    font-family: "Segoe UI", sans-serif;
+    /*background-color: #f5f5f5;*/
+    color: #4e4e50;
+}
+
+.navbar-default .navbar-brand{
+    color:#fff;
+}
+
+.navbar-default .navbar-brand:hover, .navbar-default .navbar-brand:focus {
+    color: #eee;
+    background-color: transparent;
+}
+
+/*media all*/
+.navbar-default .navbar-right > li > a:hover, .navbar-default .navbar-right > li > a:focus {
+    color: #eee;
+    background-color: transparent;
+}
+
+.navbar-default .navbar-right > li > a {
+    cursor:pointer;
+}
+
+.container > ul > li > a > span {
+    font-size:14px;
+    margin-right:3px;
+}
+
+.container > a > span {
+    font-size:1.2em;
+    margin-right:3px;
+}
+
+/*media all*/
+#nav-container {
+    margin-top: -1.5em;
+    margin-bottom: 2em;
+    background: #1a86c0;
+}
+
+/*media all*/
+h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
+    font-family: inherit;
+    font-weight: 400;
+    line-height: 1.1;
+    color: inherit;
+}
+
+/*media all*/
+#nav-container h1, #nav-container h2 {
+    font-weight: 100;
+}
+
+/*media all*/
+#nav-container .row {
+    margin-top: 3em;
+    color: #fff;
+    text-align: center;
+}
+
+/*media all*/
+.navbar .navbar-default,.navbar .navbar-nav li > a {
+    font-size:14px;
+    color: #fff;
+}
+
+.navbar .navbar-brand {
+    font-size:1.5em;
+    font-weight:lighter;
+}
+
+/*media all*/
+#nav-container .btn-custom {
+    color: #fff;
+    background-color: #1A86C0;
+    border-color: #73C1EA;
+    height: 45px;
+    padding: 0px 12px;
+    text-transform: uppercase;
+    width: 21%;
+}
+
+.btn-custom {
+    color: #fff;
+    background-color: #1A86C0;
+    border-color: #73C1EA;
+    height: 45px;
+    padding: 0px 12px;
+    text-transform: uppercase;
+    width: 80%;
+}
+
+.btn-custom:hover,.btn-custom:focus {
+    color: #fff;
+}
+/*media all*/
+#sidebar h2 {
+    font-size: 1em;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+/*media all*/
+h1, .h1, h2, .h2, h3, .h3 {
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+/*media all*/
+#sidebar ul li a {
+    color: #0078d7;
+}
+/*media all*/
+#main .block header h2 {
+    font-size: 1em;
+    font-weight: 600;
+    border-bottom: 1px solid #d5d5d5;
+    padding-bottom: 0.5em;
+}
+
+#main .block .row {
+    padding: 10px 20px;
+}
+
+.table{
+    font-size:0.8em;
+}
+
+.table > thead > tr > td {
+    text-align:center
+}
+
+ul >li  > img{
+    cursor:pointer;
+}
+
+.row .list-inline > li {
+    padding-left:1px;
+    padding-right: 1px;
+}
+
+.carousel-control.left {
+    background-image:none;
+}
+
+.carousel-control.right {
+    background-image:none;
+}
+
+@keyframes FadeinFrame{
+    from {
+        opacity:0
+    }
+    To {
+        opacity:1
+    }
+}
+
+.Fade-in {
+    animation-name: FadeinFrame;
+    animation-duration: 1.2s;
+}
+
+.pre-loading {
+    position:fixed;
+    z-index: 20000;
+    width:100%;
+    text-align: center;
+    height:100%;
+    background-color:#f5f5f5;
+}
+
+.fading.ng-leave,
+.fading.ng-enter{
+    -webkit-transition: 0.5s linear all;
+    transition: 0.5s linear all;
+}
+
+.fading.ng-leave,
+.fading.ng-enter-active {    
+    opacity: 1;
+}
+
+.fading.ng-enter,
+.fading.ng-leave-active {
+    opacity: 0;
+}
+
+.custom {
+    height: 45px !important;
+    padding: 0px 12px !important;
+    margin-left:20px !important;
+    text-transform: uppercase !important;
+    width: 80% !important;
+}
+.addlanguage{
+    position: relative;
+    top: 3px;
+    float: right;
+}
+.privated{
+    background-color: white;
+}
+.ptitle{
+    font-size:18px;
+    line-height: 30px;
+    padding: 10px 0 0 10px;
+    border-bottom: 1px solid #eee;
+    color:#27a9e3;
+}
+.pmachine{
+    margin: 30px 0px 30px 20px;
+}
+.emptydiv{
+    height:10px;
+}
+.Commondiv{
+    margin:0px 10px;
+}
+.white-backg{
+    background-color:white;
+}
+.commVMs{
+    padding-left:10px;
+}
+.aligncenter{
+    text-align:center;
+}
+.inheritrow{
+    margin-left:inherit;
+    margin-right:inherit;
+}
+.privateusage{
+    float: left;
+    width: 400px;
+    line-height: 30px;
+    color: white;
+    font-size: 14px;
+    background-color: white;
+    padding: 10px 10px;
+     margin-left: 15px;
+     height:160px;
+}
+.serverusage{
+     float: left;
+    width: 400px;
+    line-height: 30px;
+    color: white;
+    font-size: 14px;
+    background-color: white;
+    padding: 10px 10px;
+     margin-left: 15px;
+     height:160px;
+}
+.chartSize{
+    width:400px;
+    height:150px;
+}
+.createm{
+    /*position: relative;
+    top: -28px;
+    left: 88%;*/
+    float:right;
+    margin-right: 15px;
+}
+.subtitle{
+    float:left;
+}
+/*.createm a{
+    color:#278eda;
+}*/
+
+.mainmachine{
+height: 130px;
+background-size: 200px;
+width:200px;
+text-align: center;
+float: left;
+margin: 10px 20px;
+font-size: 14px;
+/*color:#b2b9f1;*/
+color:#707de2;
+}
+.ready{
+    background-image:url("../Img/machine_bg_ready.png");
+background-repeat:no-repeat;
+}
+.pending{
+    background-image:url("../Img/machine_bg_disable.png");
+background-repeat:no-repeat;
+}
+.pending .name{
+    margin-top: 6px;
+    line-height: 30px;
+}
+/*.available{
+    border:solid 1px #d5d5d5;
+}
+.available .available_hint{
+    background-image:url("../Img/add_gray.png");
+    background-size:60px;
+    background-repeat:no-repeat;
+    background-position:center;
+    width:inherit;
+    height:inherit;
+}*/
+.mainmachine .availablename {
+   padding-top: 35px;
+}
+.mainmachine .name{
+   padding-top: 20px;
+    line-height: 20px;
+}
+.mainmachine .ip{
+    line-height: 20px;
+}
+.mainmachine .language {
+     line-height: 20px;
+}
+
+.allmachie{
+    background-color:white;
+    margin:0 auto;
+    width:960px;
+}
+.left-empty{
+     width: calc((100% - 880px)/2);/*用100%的屏幕宽度减去已经知道固定的宽度，就是自适应的部分*/
+    overflow: auto;
+    background-color: #FFF;
+}
+@media screen and (max-width: 1200px) {
+    .allmachie{
+        width:960px;
+    }
+}
+@media screen and (max-width: 900px) { 
+.allmachie {width: 200px;} 
+} 
+@media screen and (max-width: 500px) { 
+.allmachie {width: 100px;} 
+} 
+
+.clearboth{
+    clear:both;
+}
+.modalbody{
+    /*position:relative;
+    left:10px;
+    top:30px;*/
+    background-color:transparent;
+    z-index:100000;
+}
+.windowTopClass{
+
+}
+.windowClass{
+
+}
+.qutao{
+    color:#1a86c0;
+}
+.serverChart{
+    float:left;
+    background-color:white;
+    width: 450px;
+   margin-bottom: 10px;
+}
+.avgreport{
+    margin-left:10px;
+    margin-right:10px;
+    /*border-right:1px solid #eee;*/
+    border-bottom:1px solid #eee;
+}
+.usagereport{
+    margin-left:10px;
+}
+.matrixreport{
+    margin-bottom:10px;
+}
+.commonInfo{
+    margin-left:10px;
+    border-bottom:1px solid #eee;
+}
+.detailinfo{
+    height: 300px;
+}
+.detailinfo div{
+    color:red;
+}
+.title{
+    font-size: 16px;
+    text-align: center;
+    margin-bottom: 5px;
+}
+.reportpage{
+    margin:5px;background-color:white;
+}
+.filter{
+    margin:10px;
+}
+.filter-col{
+    border:1px solid skyblue;
+}

@@ -1,0 +1,137 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{38496670-C84F-4C6D-8CE4-71C1D06BAC8D}</ProjectGuid>
+    <OutputType>Exe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>AutomacionTestCase</RootNamespace>
+    <AssemblyName>AutomacionTestCase</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.WTT.Diagnostics, Version=2.2.2098.0, Culture=neutral, PublicKeyToken=399d95e6b32b7391, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Users\v-yyauo\Desktop\WX_HLK\wx-dll\Microsoft.WTT.Diagnostics.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Web.Http, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Users\v-yyauo\Desktop\WX_HLK\wx-dll\System.Web.Http.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Http.Cors">
+      <HintPath>C:\Users\v-yyauo\Desktop\WX_HLK\wx-dll\System.Web.Http.Cors.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+    <Reference Include="WTTOMAsset, Version=2.2.2098.0, Culture=neutral, PublicKeyToken=399d95e6b32b7391, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Users\v-yyauo\Desktop\WX_HLK\wx-dll\WTTOMAsset.dll</HintPath>
+    </Reference>
+    <Reference Include="WTTOMBase, Version=2.2.2098.0, Culture=neutral, PublicKeyToken=399d95e6b32b7391, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Users\v-yyauo\Desktop\WX_HLK\wx-dll\WTTOMBase.dll</HintPath>
+    </Reference>
+    <Reference Include="WTTOMDeployment">
+      <HintPath>C:\Users\v-yyauo\Desktop\WX_HLK\wx-dll\WTTOMDeployment.dll</HintPath>
+    </Reference>
+    <Reference Include="WTTOMDimension, Version=2.2.2098.0, Culture=neutral, PublicKeyToken=399d95e6b32b7391, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Users\v-yyauo\Desktop\WX_HLK\wx-dll\WTTOMDimension.dll</HintPath>
+    </Reference>
+    <Reference Include="WTTOMFailure">
+      <HintPath>C:\Users\v-yyauo\Desktop\WX_HLK\wx-dll\WTTOMFailure.dll</HintPath>
+    </Reference>
+    <Reference Include="WTTOMFeature, Version=2.2.2098.0, Culture=neutral, PublicKeyToken=399d95e6b32b7391, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Users\v-yyauo\Desktop\WX_HLK\wx-dll\WTTOMFeature.dll</HintPath>
+    </Reference>
+    <Reference Include="WTTOMIdentity, Version=2.2.2098.0, Culture=neutral, PublicKeyToken=399d95e6b32b7391, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Users\v-yyauo\Desktop\WX_HLK\wx-dll\WTTOMIdentity.dll</HintPath>
+    </Reference>
+    <Reference Include="WTTOMJobs, Version=2.2.2098.0, Culture=neutral, PublicKeyToken=399d95e6b32b7391, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Users\v-yyauo\Desktop\WX_HLK\wx-dll\WTTOMJobs.dll</HintPath>
+    </Reference>
+    <Reference Include="WTTOMNotification, Version=2.2.2098.0, Culture=neutral, PublicKeyToken=399d95e6b32b7391, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Users\v-yyauo\Desktop\WX_HLK\wx-dll\WTTOMNotification.dll</HintPath>
+    </Reference>
+    <Reference Include="WTTOMParameter, Version=2.2.2098.0, Culture=neutral, PublicKeyToken=399d95e6b32b7391, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Users\v-yyauo\Desktop\WX_HLK\wx-dll\WTTOMParameter.dll</HintPath>
+    </Reference>
+    <Reference Include="WTTOMResource, Version=2.2.2098.0, Culture=neutral, PublicKeyToken=399d95e6b32b7391, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Users\v-yyauo\Desktop\WX_HLK\wx-dll\WTTOMResource.dll</HintPath>
+    </Reference>
+    <Reference Include="WTTOMSchedule">
+      <HintPath>C:\Users\v-yyauo\Desktop\WX_HLK\wx-dll\WTTOMSchedule.dll</HintPath>
+    </Reference>
+    <Reference Include="WTTOMSQLProvider, Version=2.2.2098.0, Culture=neutral, PublicKeyToken=399d95e6b32b7391, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Users\v-yyauo\Desktop\WX_HLK\wx-dll\WTTOMSQLProvider.dll</HintPath>
+    </Reference>
+    <Reference Include="WTTOMStage">
+      <HintPath>C:\Users\v-yyauo\Desktop\WX_HLK\wx-dll\WTTOMStage.dll</HintPath>
+    </Reference>
+    <Reference Include="WTTSchemaGenerator">
+      <HintPath>C:\Users\v-yyauo\Desktop\WX_HLK\wx-dll\WTTSchemaGenerator.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Models\GetDataFromDB.cs" />
+    <Compile Include="Models\HLKController.cs" />
+    <Compile Include="Models\HLKModel.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="bin\Debug\HLKConfig.xml">
+      <SubType>Designer</SubType>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Repository\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

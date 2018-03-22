@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="0ad211797983422faa8bfe1d960a5380" Name="Diagram1">
+        <EntityTypeShape EntityType="HLKJobsModel.Feature" Width="1.5" PointX="5.75" PointY="3.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="HLKJobsModel.Job" Width="1.5" PointX="8" PointY="1.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="HLKJobsModel.JobExecutionType" Width="1.5" PointX="5.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="HLKJobsModel.Resource" Width="1.5" PointX="3" PointY="1.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="HLKJobsModel.ResourcePool" Width="1.5" PointX="0.75" PointY="3" IsExpanded="true" />
+        <EntityTypeShape EntityType="HLKJobsModel.Result" Width="1.5" PointX="0.75" PointY="9" IsExpanded="true" />
+        <EntityTypeShape EntityType="HLKJobsModel.JobAncestry" Width="1.5" PointX="2.75" PointY="9" IsExpanded="true" />
+        <AssociationConnector Association="HLKJobsModel.FK_Feature_Feature" ManuallyRouted="false" />
+        <AssociationConnector Association="HLKJobsModel.FK_Job_Feature" ManuallyRouted="false" />
+        <AssociationConnector Association="HLKJobsModel.FK_Job_JobExecutionType" ManuallyRouted="false" />
+        <AssociationConnector Association="HLKJobsModel.FK_Resource_ResourcePool" ManuallyRouted="false" />
+        <AssociationConnector Association="HLKJobsModel.FK_ResourcePool_ResourcePool" ManuallyRouted="false" />
+        <AssociationConnector Association="HLKJobsModel.FK_Result_Result" ManuallyRouted="false" />
+        <EntityTypeShape EntityType="HLKJobsModel.ResourceConfiguration" Width="1.5" PointX="0.75" PointY="9.875" />
+        <AssociationConnector Association="HLKJobsModel.FK_Resource_ResourceConfiguration" />
+        <AssociationConnector Association="HLKJobsModel.FK_Result_ResourceConfiguration" />
+        <EntityTypeShape EntityType="HLKJobsModel.Run" Width="1.5" PointX="5.25" PointY="12.375" />
+        <EntityTypeShape EntityType="HLKJobsModel.Schedule" Width="1.5" PointX="3" PointY="12.375" />
+        <AssociationConnector Association="HLKJobsModel.FK_Schedule_ResourcePool" />
+        <AssociationConnector Association="HLKJobsModel.FK_Run_Schedule" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

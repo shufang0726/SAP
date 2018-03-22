@@ -1,0 +1,6 @@
+﻿OpenFileDialog      ";ClassName = '#32770'"
+    Cancel          ";[MSAA]Role = 'window' && ClassName = 'Button';Role = 'push button'"
+    Open            ";[MSAA]Role = 'window' && ClassName = 'Button';Role = 'push button'"
+    FileName        ";[MSAA]Role = 'window' && ClassName = 'Edit';Role = 'editable text'"
+    AllLocations    ";[MSAA]Role = 'split button'"
+    Address         ";[MSAA]Role = 'dialog';Role = 'progress bar' && ClassName = 'msctls_progress32';Role = 'window' && ClassName = 'ComboBox';Role = 'combo box';Role = 'window' && ClassName = 'Edit';Role = 'editable text'"

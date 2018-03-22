@@ -1,0 +1,87 @@
+﻿@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+<html ng-app="SAPApp">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>@ViewBag.Title - SAP Web</title>
+    <link href="~/Content/bootstrap/css/bootstrap.css" rel="stylesheet" />
+    <link href="~/Content/Bootstrap/css/bootstrap-responsive.css" rel="stylesheet" />
+    <link href="~/Content/Bootstrap/css/bootstrap-directional-buttons.css" rel="stylesheet" />
+    <!--new ui start-->
+    <link href="~/Content/Vendor/css/matrix-media.css" rel="stylesheet" />
+    <link href="~/Content/Vendor/css/matrix-style.css" rel="stylesheet" />
+    <link href="~/Content/Vendor/font-awesome/css/font-awesome.css" rel="stylesheet" />
+    <link href="~/Content/Vendor/css/jquery.gritter.css" rel="stylesheet" />
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,700,800' rel='stylesheet' type='text/css'>
+    <!--new ui end-->
+    <!--old-->
+    <link href="~/Content/Style/app.css" rel="stylesheet" />
+    <link href="~/Content/Plugin/layer/skin/layer.css" rel="stylesheet" />
+    <link href="~/Content/Style/loading.css" rel="stylesheet" />
+    <link href="~/Content/Plugin/multiselect/isteven-multi-select.css" rel="stylesheet" />
+    <!--old-->
+
+</head>
+<body>
+
+    <div id="header">
+        <h1>SAP Web</h1>
+    </div>
+    <div id="search">
+        <p>Hello, @User.Identity.Name!</p>
+    </div>
+    <div id="sidebar">
+        <ul>
+            <li class="mainmenu active"><a ui-sref="web"><span>Web Automation</span></a> </li>
+            <li class="mainmenu"><a ui-sref="client"><span>Cilent Automation</span></a></li>
+            <li class="mainmenu"><a ui-sref="android"><span>Android Automation</span></a></li>
+            <li class="mainmenu"><a ui-sref="ios"><span>IOS Automation</span></a></li>
+        </ul>
+    </div>
+    <div id="content">
+        <!--breadcrumbs-->
+        <div id="content-header">
+            <div id="breadcrumb">
+                <a id="menuHome" ui-sref="web" title="Go to Home" class="tip-bottom"><i class="icon-home"></i> Home</a>
+            </div>
+
+        </div>
+        <!--End-breadcrumbs-->
+        <!--Action boxes-->
+        <div class="container-fluid" ng-app="SAPApp">
+            @RenderBody()
+        </div>
+    </div>
+    <footer>
+        <div class="row-fluid">
+            <div id="footer" class="span12"> &copy;@DateTime.Now.Year - SAP Web. </div>
+        </div>
+    </footer>
+    <script src="~/Content/JavaScripts/jquery-2.2.3.js"></script>
+    <script src="~/Content/Bootstrap/js/bootstrap.min.js"></script>
+
+    <!--Angularu Js & Plug-in-->
+    <script src="~/Content/AngularJS/angular.js"></script>
+    <script src="~/Content/AngularJS/angular-animate.js"></script>
+    <script src="~/Content/AngularJS/angular-ui-router.min.js"></script>
+    <script src="~/Content/AngularJS/angular-popups.js"></script>
+    <script src="~/Content/AngularJS/ui-bootstrap-tpls-1.2.5.min.js"></script>
+    <script src="~/Content/Plugin/layer/layer.js"></script>
+    <script src="~/Content/Plugin/multiselect/isteven-multi-select.js"></script>
+
+    <script src="~/Content/AngularJS/NebulaApp.js"></script>
+
+    <script src="~/Content/JavaScripts/jquery-1.10.2.min.js"></script>
+    <script src="~/Content/Vendor/JS/matrix.js"></script>
+    <script src="~/Content/Vendor/JS/jquery.ui.custom.js"></script>
+    @*javascript*@
+    <script src="~/Content/Controller/GetMachine.js"></script>
+
+    <script src="~/Content/Plugin/echarts.min.js"></script>
+</body>
+</html>

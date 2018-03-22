@@ -1,0 +1,5 @@
+C:\Users\v-yusun\Source\Repos\SAP\AutomacionTestCase\Execute_Android\bin\Debug\Execute_Android.exe.config
+C:\Users\v-yusun\Source\Repos\SAP\AutomacionTestCase\Execute_Android\bin\Debug\Execute_Android.exe
+C:\Users\v-yusun\Source\Repos\SAP\AutomacionTestCase\Execute_Android\bin\Debug\Execute_Android.pdb
+C:\Users\v-yusun\Source\Repos\SAP\AutomacionTestCase\Execute_Android\obj\Debug\Execute_Android.exe
+C:\Users\v-yusun\Source\Repos\SAP\AutomacionTestCase\Execute_Android\obj\Debug\Execute_Android.pdb
